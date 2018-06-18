@@ -1,5 +1,5 @@
 # zw [![Build Status](https://travis-ci.org/trubitsyn/zw.svg?branch=master)](https://travis-ci.org/trubitsyn/zw) [![GoDoc](https://godoc.org/github.com/trubitsyn/zw?status.png)](https://godoc.org/github.com/trubitsyn/zw)
-Zero-width character detection and removal for Go.
+Zero-width character detection and removal for Go. Inspired by @umpox [Medium article](https://medium.com/@umpox/be-careful-what-you-copy-invisibly-inserting-usernames-into-text-with-zero-width-characters-18b4e6f17b66).
 
 ## Installation
 `go get github.com/trubitsyn/zw`
