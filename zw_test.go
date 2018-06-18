@@ -24,7 +24,7 @@ func TestHasNoZeroWidthCharacters(t *testing.T) {
 
 func TestRemoveZeroWidthCharacters(t *testing.T) {
 	expected := "HERE><HERE"
-	actual := RemoveZeroWidthCharacters("HERE><HERE")
+	actual := RemoveZeroWidthCharacters("HERE>\u200B\u200C\u200D\uFEFF<HERE")
 	if actual != expected {
 		t.Errorf("String was incorrect, got: %s, want: %s.", actual, expected)
 	}
@@ -32,7 +32,7 @@ func TestRemoveZeroWidthCharacters(t *testing.T) {
 
 func TestRemoveZeroWidthSpace(t *testing.T) {
 	expected := "HERE><HERE"
-	actual := RemoveZeroWidthCharacters("HERE>\u200b<HERE")
+	actual := RemoveZeroWidthCharacters("HERE>\u200B<HERE")
 	if actual != expected {
 		t.Errorf("String was incorrect, got: %s, want: %s.", actual, expected)
 	}
