@@ -5,7 +5,7 @@ Zero-width character detection and removal for Go.
 `go get github.com/trubitsyn/zw`
 
 ## Usage
-```
+<pre>
 package main
 
 import (
@@ -15,11 +15,11 @@ import (
 
 func main() {
 	s := "abc​def"				 // zero-width space between "c" and "d"
-	fmt.Printf("% x\n", s)			 // 61 62 63 **e2 80 8b** 64 65 66
+	fmt.Printf("% x\n", s)			 // 61 62 63 <b>e2 80 8b</b> 64 65 66
 	clean := zw.RemoveZeroWidthCharacters(s) // zero-width space is in bold
 	fmt.Printf("% x\n", clean)		 // 61 62 63 64 65 66
 }
-```
+</pre>
 
 ## Testing
 `go test github.com/trubitsyn/zw`
