@@ -15,9 +15,9 @@ import (
 
 func main() {
 	s := "abc​def"				 // zero-width space between "c" and "d"
+	clean := zw.RemoveZeroWidthCharacters(s) // a  b  c           d  e  f
 	fmt.Printf("% x\n", s)			 // 61 62 63 <b>e2 80 8b</b> 64 65 66
-	clean := zw.RemoveZeroWidthCharacters(s) // zero-width space is in bold
-	fmt.Printf("% x\n", clean)		 // 61 62 63 64 65 66
+	fmt.Printf("% x\n", clean)		 // 61 62 63          64 65 66
 }
 </pre>
 
