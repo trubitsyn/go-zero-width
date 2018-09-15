@@ -2,8 +2,8 @@
 // Use of this source code is governed by the Apache 2.0
 // license that can be found in the LICENSE file.
 
-// Package zw implements functions to remove zero-width characters from strings.
-package zw
+// Package zerowidth implements functions to remove zero-width characters from strings.
+package zerowidth
 
 import "strings"
 

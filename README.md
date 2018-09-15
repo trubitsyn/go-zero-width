@@ -1,28 +1,28 @@
-# zw [![Build Status](https://travis-ci.org/trubitsyn/zw.svg?branch=master)](https://travis-ci.org/trubitsyn/zw) [![GoDoc](https://godoc.org/github.com/trubitsyn/zw?status.svg)](https://godoc.org/github.com/trubitsyn/zw)
+# zero-width [![Build Status](https://travis-ci.org/trubitsyn/zero-width.svg?branch=master)](https://travis-ci.org/trubitsyn/zero-width) [![GoDoc](https://godoc.org/github.com/trubitsyn/zero-width?status.svg)](https://godoc.org/github.com/trubitsyn/zero-width)
 Zero-width character detection and removal for Go. Inspired by [this Medium article](https://medium.com/@umpox/be-careful-what-you-copy-invisibly-inserting-usernames-into-text-with-zero-width-characters-18b4e6f17b66).
 
 ## Installation
-`go get github.com/trubitsyn/zw`
+`go get github.com/trubitsyn/zero-width`
 
 ## Usage
 <pre>
 package main
 
 import (
-	"github.com/trubitsyn/zw"
+	"github.com/trubitsyn/zero-width"
 	"fmt"
 )
 
 func main() {
 	login := "abc​def"				// zero-width space between "c" and "d"
-	clean := zw.RemoveZeroWidthCharacters(login)	// a  b  c           d  e  f
+	clean := zerowidth.RemoveZeroWidthCharacters(login)	// a  b  c           d  e  f
 	fmt.Printf("% x\n", login)			// 61 62 63 <b>e2 80 8b</b> 64 65 66
 	fmt.Printf("% x\n", clean)			// 61 62 63          64 65 66
 }
 </pre>
 
 ## Testing
-`go test github.com/trubitsyn/zw`
+`go test github.com/trubitsyn/zero-width`
 
 ## LICENSE
 ```
