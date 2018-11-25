@@ -32,7 +32,7 @@ func TestRemoveZeroWidthCharacters(t *testing.T) {
 
 func TestRemoveZeroWidthSpace(t *testing.T) {
 	expected := "HERE><HERE"
-	actual := RemoveZeroWidthCharacters("HERE>\u200B<HERE")
+	actual := RemoveZeroWidthSpace("HERE>\u200B<HERE")
 	if actual != expected {
 		t.Errorf("String was incorrect, got: %s, want: %s.", actual, expected)
 	}
@@ -40,7 +40,7 @@ func TestRemoveZeroWidthSpace(t *testing.T) {
 
 func TestRemoveZeroWidthNoBreakSpace(t *testing.T) {
 	expected := "HERE><HERE"
-	actual := RemoveZeroWidthCharacters("HERE>\uFEFF<HERE")
+	actual := RemoveZeroWidthNoBreakSpace("HERE>\uFEFF<HERE")
 	if actual != expected {
 		t.Errorf("String was incorrect, got: %s, want: %s.", actual, expected)
 	}
@@ -48,7 +48,7 @@ func TestRemoveZeroWidthNoBreakSpace(t *testing.T) {
 
 func TestRemoveZeroWidthJoiner(t *testing.T) {
 	expected := "HERE><HERE"
-	actual := RemoveZeroWidthCharacters("HERE>\u200D<HERE")
+	actual := RemoveZeroWidthJoiner("HERE>\u200D<HERE")
 	if actual != expected {
 		t.Errorf("String was incorrect, got: %s, want: %s.", actual, expected)
 	}
