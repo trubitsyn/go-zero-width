@@ -22,7 +22,10 @@ func main() {
 </pre>
 
 ## Testing
-`go test github.com/trubitsyn/go-zero-width`
+```
+go get -t github.com/trubitsyn/go-zero-width
+go test github.com/trubitsyn/go-zero-width
+```
 
 ## LICENSE
 ```
