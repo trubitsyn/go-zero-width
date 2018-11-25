@@ -8,19 +8,18 @@ package zerowidth
 import "strings"
 
 const (
-	// Zero-Width Space.
+	// ZWSP represents zero-width space.
 	ZWSP = '\u200B'
 
-	// Zero-Width No-Break Space.
+	// ZWNBSP represents zero-width no-break space.
 	ZWNBSP = '\uFEFF'
 
-	// Zero-Width Joiner.
+	// ZWJ represents zero-width joiner.
 	ZWJ = '\u200D'
 
-	// Zero-Width Non-Joiner.
+	// ZWNJ represents zero-width non-joiner.
 	ZWNJ = '\u200C'
 
-	// Empty string.
 	empty = ""
 )
 
