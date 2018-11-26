@@ -1,4 +1,4 @@
-# zero-width [![Build Status](https://travis-ci.org/trubitsyn/go-zero-width.svg?branch=master)](https://travis-ci.org/trubitsyn/go-zero-width) [![GoDoc](https://godoc.org/github.com/trubitsyn/go-zero-width?status.svg)](https://godoc.org/github.com/trubitsyn/go-zero-width)
+# zero-width [![Build Status](https://travis-ci.org/trubitsyn/go-zero-width.svg?branch=master)](https://travis-ci.org/trubitsyn/go-zero-width) [![GoDoc](https://godoc.org/github.com/trubitsyn/go-zero-width?status.svg)](https://godoc.org/github.com/trubitsyn/go-zero-width) [![Go Report Card](https://goreportcard.com/badge/github.com/trubitsyn/go-zero-width)](https://goreportcard.com/report/github.com/trubitsyn/go-zero-width)
 Zero-width character detection and removal for Go. Inspired by [this Medium article](https://medium.com/@umpox/be-careful-what-you-copy-invisibly-inserting-usernames-into-text-with-zero-width-characters-18b4e6f17b66).
 
 ## Installation
