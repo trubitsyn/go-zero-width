@@ -21,6 +21,12 @@ func main() {
 }
 </pre>
 
+## Supported characters
+* Zero-width space (U+200B)
+* Zero-width no-break space (U+FEFF)
+* Zero-width joiner (U+200D)
+* Zero-width non-joiner (U+200C)
+
 ## Testing
 ```
 go get -t github.com/trubitsyn/go-zero-width
