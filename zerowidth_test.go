@@ -7,10 +7,13 @@ package zerowidth
 import "testing"
 
 func TestHasZeroWidthCharacters(t *testing.T) {
-	expected := true
-	actual := HasZeroWidthCharacters("HERE>\u200C<HERE")
-	if actual != expected {
-		t.Errorf("String was incorrect, got: %t, want: %t", actual, expected)
+	samples := []string{"\u200B", "\u200C", "\u200D", "\uFEFF"}
+	for _, s := range samples {
+		expected := true
+		actual := HasZeroWidthCharacters(s)
+		if actual != expected {
+			t.Errorf("String was incorrect, got: %t, want: %t", actual, expected)
+		}
 	}
 }
 
